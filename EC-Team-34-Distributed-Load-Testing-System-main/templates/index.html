@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Orchestrator Interface</title>
+
+</head>
+
+<body>
+
+    <h1>Orchestrator Interface</h1>
+
+    <form method="post" action="/trigger-test">
+
+        <label for="test_type">Test Type:</label>
+
+        <select id="test_type" name="test_type">
+
+            <option value="AVALANCHE">Avalanche</option>
+
+            <option value="TSUNAMI">Tsunami</option>
+
+        </select><br><br>
+
+
+
+        <label for="test_message_delay">Test Message Delay ( 0 for Avalanche):</label>
+
+        <input type="number" id="test_message_delay" name="test_message_delay"><br><br>
+
+
+
+        <label for="message_count_per_driver">Message Count Per Driver Node :</label>
+
+        <input type="number" id="message_count_per_driver" name="message_count_per_driver"><br><br>
+
+
+
+        <input type="submit" value="Trigger Test">
+
+        
+
+        
+
+    </form>
+
+</body>
+
+</html>
+
