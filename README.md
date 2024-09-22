@@ -13,9 +13,8 @@ Ensure that you have the following installed on your system:
 ![image](https://github.com/user-attachments/assets/59e079f9-7b97-4e27-ae76-8f282bbe4abc)
 
 ## How to Run the System
-Step 1: Start Kafka and Zookeeper
+Step 1: Start Kafka and Zookeeper - 
 sudo systemctl start kafka
-sudo systemctl start zookeeper
 
 Step 2: Run Target Server - 
 python3 target_server.py
@@ -25,6 +24,5 @@ python3 orchestrator.py
 
 Step 4: Run Driver Nodes (in multiple terminals) - 
 python3 driver.py
-python3 driver.py  
-python3 driver.py  
+
 
