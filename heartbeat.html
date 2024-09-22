@@ -1,1 +1,45 @@
+<!DOCTYPE html>
 
+<html>
+
+<head>
+
+    <title>Heartbeat Information</title>
+
+</head>
+
+<body>
+
+    <h1>Heartbeat Information</h1>
+
+    <div>
+
+        <table border="1">
+
+            <tr>
+
+                <th>Node ID</th>
+
+                <th>Heartbeat</th>
+
+            </tr>
+
+            {% for node in node_heart_data %}
+
+            <tr>
+
+                <td>{{ node["node_id"] }}</td>
+
+                <td>{{ node["heartbeat"] }}</td>
+
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>
