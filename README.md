@@ -10,35 +10,22 @@ Ensure that you have the following installed on your system:
 - [Kafka](https://kafka.apache.org/downloads)
 - Python 3.x
 
+![image](https://github.com/user-attachments/assets/59e079f9-7b97-4e27-ae76-8f282bbe4abc)
 
 ## How to Run the System
+# Step 1: Start Kafka and Zookeeper
+sudo systemctl start kafka
+sudo systemctl start zookeeper
 
-### 1. Start Kafka
+# Step 2: Run Target Server
+python3 target_server.py
 
-To start Kafka, use the following command:
+# Step 3: Run Orchestrator Node
+python3 orchestrator.py
 
-```bash
+# Step 4: Run Driver Nodes (in multiple terminals)
+python3 driver.py
+python3 driver.py  # (Additional driver node, in a new terminal)
+python3 driver.py  # (Additional driver node, in a new terminal)
 
 
-Start kafka using sudo systemctl start kafka
-
-Run our intermediate Kafka Node using python3 kafka_intermediate.py
-
-Now we can run our driver node on terminal using python3 driver.py
-
-Note : We can run multiple driver nodes by running this code on multiple terminal instances which will act as individual processes.
-We can now run our Orchestrator node using python3 orch.py
-
-You will now be presented with 4 options:
-
-1.Avalanche Testing
-
-2.Tsunami Testing
-
-3.Node Data
-
-4.Exit
-
-/metrics -> which will show the total number of requests and responses made to the server
-
-/ping -> returns a "pong" message to show server is active
