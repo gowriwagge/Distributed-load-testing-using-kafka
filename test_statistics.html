@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Test Statistics</title>
+
+</head>
+
+<body>
+
+    <h1>Test Metrics</h1>
+
+    <div>
+
+    <table border="1"> 
+
+    	<tr>
+
+                <th>Mean Latency</th>
+
+                <th>Median Latency</th>
+
+                <th>Min Latency</th>
+
+                <th>Max Latency</th>
+
+        </tr>
+
+        <tr>
+
+                <td> {{ global_metrics["metrics"]["mean_latency"] }}</td>
+
+                <td>{{ global_metrics["metrics"]["median_latency"] }}</td>
+
+                <td>{{ global_metrics["metrics"]["min_latency"] }}</td>
+
+                <td>{{ global_metrics["metrics"]["max_latency"] }}</td>
+
+            </tr>
+
+
+
+        </table>
+
+        
+
+    </div>
+
+</body>
+
+</html>
