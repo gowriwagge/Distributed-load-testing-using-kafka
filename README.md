@@ -17,13 +17,13 @@ Step 1: Start Kafka and Zookeeper
 sudo systemctl start kafka
 sudo systemctl start zookeeper
 
-Step 2: Run Target Server
+Step 2: Run Target Server - 
 python3 target_server.py
 
-Step 3: Run Orchestrator Node
+Step 3: Run Orchestrator Node - 
 python3 orchestrator.py
 
-Step 4: Run Driver Nodes (in multiple terminals)
+Step 4: Run Driver Nodes (in multiple terminals) - 
 python3 driver.py
 python3 driver.py  
 python3 driver.py  
